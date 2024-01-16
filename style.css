@@ -7,7 +7,7 @@
 
     /* Colors  */
     --color-orange: #FF5400;
-    --normal-black: #424247;
+    --normal-black: rgba(19, 19, 24, 0.70);
     --dark-black: #131318;
     --color-white: #FFF;
 
@@ -29,6 +29,24 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+.section {
+  width: 100%;
+  margin: 4rem 0;
+  overflow: hidden;
+}
+.title {
+  font-size: var(--font-40);
+  font-family: var(--mulish-f-family);
+  text-align: center;
+  color: var(--dark-black);
+  margin-bottom: 1rem;
+}
+.title-description {
+  font-size: var(--font-18);
+  color: var(--normal-black);
+  /* width: 500px; */
+  text-align: center;
+}
   body{
 
   }
@@ -40,7 +58,6 @@
    height: 75px;
    background: #FFF;
    z-index: 2;
-   /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
   }
   nav .navbar{
     display: flex;
@@ -102,9 +119,8 @@
     
   }
   #landing-banner {
-    width: 100%;
     height: 500px;
-    background-image: url("Images/landing-banner.png");
+    background-image: url("images/landing-banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-origin: content-box;
@@ -126,7 +142,7 @@
     border-radius: 22px;
 }
 #landing-contents {
-  width: 600px;
+  /* max-width: 600px; */
   text-align: center;
   z-index: 1;
 }
@@ -233,10 +249,47 @@
 }
 #popular-tours #tour-details a {
   text-decoration: none;
-  background: #d61414;
+  background: var(--color-orange);
   padding: 6px 0px;
   border-radius: 5px;
-  color: white;
+  color: var(--color-white);
   width: 140px;
   text-align: center;
+}
+
+/* choose-destiny */
+#choose-destiny {
+
+}
+#choose-destiny-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+#choose-destiny-gallery .maldives{grid-area: m;}
+#choose-destiny-gallery .indonesia{grid-area: i;}
+#choose-destiny-gallery .slrilanka{grid-area: s;}
+#choose-destiny-gallery .america{grid-area: a;}
+#choose-destiny-gallery .kashmir{grid-area: k;}
+#choose-destiny-gallery .bangladesh{grid-area: bd;}
+#choose-destiny-gallery .bandarban{grid-area: bn;}
+
+#choose-destiny-gallery {
+  margin-top: 3rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(100px, auto); 
+   grid-template-areas:
+    "m m m m m i i i i i"
+    "s s s a a a a a k k"
+    "bd bd bd bd bn bn bn bn bn bn";
+
+}
+.maldives {
+
+}
+#choose-destiny-gird-item {
+
 }
