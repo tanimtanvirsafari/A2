@@ -46,6 +46,7 @@
   color: var(--normal-black);
   /* width: 500px; */
   text-align: center;
+  margin-bottom: 3rem;
 }
   body{
 
@@ -267,13 +268,99 @@
   object-fit: cover;
   border-radius: 14px;
 }
-#choose-destiny-gallery .maldives{grid-area: m;}
-#choose-destiny-gallery .indonesia{grid-area: i;}
-#choose-destiny-gallery .slrilanka{grid-area: s;}
-#choose-destiny-gallery .america{grid-area: a;}
-#choose-destiny-gallery .kashmir{grid-area: k;}
-#choose-destiny-gallery .bangladesh{grid-area: bd;}
-#choose-destiny-gallery .bandarban{grid-area: bn;}
+#choose-destiny-gallery .maldives{
+  grid-area: m;
+  position: relative;
+}
+/* #choose-destiny-gallery .maldives::before,
+#choose-destiny-gallery .indonesia::before,
+#choose-destiny-gallery .slrilanka::before,
+#choose-destiny-gallery .america::before,
+#choose-destiny-gallery .kashmir::before,
+#choose-destiny-gallery .bangladesh::before,
+#choose-destiny-gallery .bandarban::before
+ {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.1);
+} */
+#choose-destiny-gallery .maldives::after {
+  content: "Maldives";
+
+}
+#choose-destiny-gallery .indonesia::after {
+  content: "Indonesia";
+
+}
+#choose-destiny-gallery .slrilanka::after {
+  content: "Slrilanka";
+
+}
+#choose-destiny-gallery .america::after {
+  content: "America";
+
+}
+#choose-destiny-gallery .kashmir::after {
+  content: "Kashmir";
+
+}
+#choose-destiny-gallery .bangladesh::after {
+  content: "Bangladesh";
+
+}
+#choose-destiny-gallery .bandarban::after {
+  content: "Bandarban";
+
+}
+#choose-destiny-gallery .maldives::after,
+#choose-destiny-gallery .indonesia::after,
+#choose-destiny-gallery .slrilanka::after,
+#choose-destiny-gallery .america::after,
+#choose-destiny-gallery .kashmir::after,
+#choose-destiny-gallery .bangladesh::after,
+#choose-destiny-gallery .bandarban::after {
+  font-size: var(--font-28);
+  color: var(--color-white);
+  font-weight: bold;
+  font-family: var(--mulish-f-family);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#choose-destiny-gallery .indonesia {
+  grid-area: i;
+  position: relative;
+}
+
+#choose-destiny-gallery .slrilanka {
+  grid-area: s;
+  position: relative;
+}
+
+#choose-destiny-gallery .america {
+  grid-area: a;
+  position: relative;
+}
+
+#choose-destiny-gallery .kashmir {
+  grid-area: k;
+  position: relative;
+}
+
+#choose-destiny-gallery .bangladesh {
+  grid-area: bd;
+  position: relative;
+}
+
+#choose-destiny-gallery .bandarban {
+  grid-area: bn;
+  position: relative;
+}
 
 #choose-destiny-gallery {
   margin-top: 3rem;
@@ -292,4 +379,64 @@
 }
 #choose-destiny-gird-item {
 
+}
+
+/* why-us */
+#why-us {
+
+}
+#why-us-cards {
+  height: 600px;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+
+}
+#why-us-cards-item {
+  flex-basis: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+#why-us-cards-item:nth-child(1) {
+  border: 1px solid rgba(251, 181, 99, 0.20);
+  background-color: rgba(251, 181, 99, 0.05);
+}
+#why-us-cards-item:nth-child(2) {
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background-color: rgba(41, 206, 246, 0.05);
+}
+#why-us-cards-item:nth-child(3) {
+  border: 1px solid rgba(233, 68, 68, 0.20);
+  background: rgba(233, 68, 68, 0.05);
+}
+#why-us-cards-item:last-child {
+  flex-grow: 0 !important;
+}
+#why-us-cards-item img {
+  width: 64px;
+  height: 64px;
+}
+#why-us-cards-item h2{
+  color: var(--dark-black);
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+#why-us-cards-item p{
+  color: var(--normal-black);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
 }
