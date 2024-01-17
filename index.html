@@ -20,6 +20,13 @@
             <a href="#">Hero <span>Travel</span></a>
             </div>
 
+            <!-- visible in mobile view  -->
+            <input type="checkbox" id="check">
+            <label for="check" id="menu-toggle-icons">
+              <i id="menu-open-bar" class="fa-solid fa-bars"></i>
+              <i id="menu-close-bar" class="fa-regular fa-circle-xmark"></i>
+            </label>
+            
           <ul class="nav-items">
             <li><a href="#Home">Home</a></li>
             <li><a href="#Packages">Packages</a></li>
@@ -33,9 +40,10 @@
     <main id="wrapper">
       <!-- landing-banner -->
         <section id="landing-banner" class="section">
+          <div id="landing-banner-wrapper">
           <div id="landing-contents">
             <h1>Explore Your Travel</h1>
-            <p>Traveling makes you feel alive again. It can become a life-changing experience that will not only <br> revive you, but also enable you to grow as a person.</p>
+            <p>Traveling makes you feel alive again. It can become a life-changing experience that will not only revive you, but also enable you to grow as a person.</p>
           </div>
           <div id="landing-select">
             <form action="">
@@ -50,12 +58,13 @@
               <option value="">Select type</option>
             </select>
             
-            <div id="landing-submit">
+            <div id="landing-submit" class="landing-select-item">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="submit" value="Find Now">
             </div>
           </form>
           </div>
+        </div>
         </section>
 
         <!-- Popular tours  -->
